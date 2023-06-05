@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*  фотография сверху  */
+.main_img{
+    width: 100%;
+    height: 17vw;
+    object-fit: cover;
+    
+}
+/* Главный блок сверху */
+.imgstg {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+/* див с задачами */
+.maincont {
+    margin-top: 20px;
+  }
+/* фон */
+body {
+    background-image: linear-gradient(rgba(24, 24, 36,0.85),rgba(24, 24, 36, 0.85)), url("../img/phin.jpg");
+    
+}
+/* блок мои дела */
+.main_h {
+    position: absolute;
+    align-self: center;
+    /* margin-top: 1vw ; */
+    margin-bottom: 1vw;
+    
+}
+
+/* текст блока мои дела */
+.main_h_p {
+    font-size: 3vw;
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* блок To Do List */
+.name {
+    position: absolute;
+    top: 2%;
+    left: 1%;
+    
+}
+
+/* текст блока  To Do List */
+.name_p {
+    font-size: 2.5vw;
+    color: aliceblue;
+    text-decoration: underline;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+/* див погода / время / дата */
+.weather {
+    position: absolute;
+    top: 2%;
+    right: 1%;
+    width: 15%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    font-family: 'Raleway', sans-serif;
+}
+
+/* маркер и город */
+.img_weather_cont {
+    display: flex;
+    align-items: center;
+    
+  }
+  
+
+/*  Текст (название города) */
+.name_weather {
+    margin-top: 13px;
+    margin-bottom: 5px;
+    font-size: 2vw;
+    color: aliceblue;
+    
+}
+/* текст градусы */
+.graduce{
+    font-size: 5vw;
+    color: aliceblue;
+    text-align: center;
+}
+/* текст дата */
+.date{
+    text-align: center;
+    color: #fff;
+    font-size: 1.5vw;
+}
+
+/* блок ввода задач на странице */
+.input_d{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 50%;
+    display: flex;
+    bottom:30px
+    
+
+}
+
+
+/* поле ввода*/
+.in_t {
+    flex-grow: 0.8;
+    height: 6vh;
+    font-size: 0.9vw;
+    padding-left: 20px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgba(24,24, 36,0.5);
+    color: aliceblue;
+    padding-right: 70px;
+    outline: none;
+    font-family: 'Raleway', sans-serif;
+  }
+
+/* кнопка добавить */
+.in {
+    background-color: rgba(48,48,59);
+    border: 0;
+    color: aliceblue;
+    width: 10vw;
+    height: 100%;
+    border-radius: 15px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    font-size: 1vw;
+    font-family: 'Raleway', sans-serif;
+    
+  }
+/*  спискок задач */
+.tasklist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+/* задачи */
+.tasklist li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    word-break: break-all;
+    width: 46%;
+    font-family: 'Roboto Slab', serif;
+    font-size: 25px;
+}
+
+
+
+/*  кнопка "галочка" для задачи */
+.tasklist li .button1 {
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url("../img/free-icon-check-mark-1443000.png");
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-size: 1.5vw 1.5vw;
+    border: 0;
+    padding: 0;
+    width: 1.5vw;
+    height: 1.5vw;
+    cursor: pointer;
+}
+
+/*  кнопка "корзина" для задачи */
+.tasklist li .button2 {
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url('../img/free-icon-bin-5976474.png');
+    opacity: 0.8;
+    background-repeat: no-repeat;
+    background-size: 1.9vw 1.5vw;
+    border: 0;
+    padding: 0;
+    width: 1.9vw;
+    height: 1.5vw;
+    cursor: pointer;
+    word-wrap: break-word;
+}
+/* див для таймера */
+.conteiner_2-th{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15%;
+
+    
+}
+/* таймер */
+.timer{
+    background-color: rgba(255, 255, 255, 0.06);
+    width: 100%;
+    height: 70px;
+    border-radius: 40px;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:60px ;
+    color: aliceblue;
+    font-family: 'Raleway', sans-serif;
+ 
+}
+
+
+
+/* Задача выполнена */
+.completed {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 20px;
+}
+@media (max-width: 1300px) {
+    .completed {
+        font-size: 25px;
+    }
+}
+@media (max-width: 768px) {
+    .completed {
+        font-size: 15px;
+    }
+}
+
+/* Задача не выполнена */
+.uncompleted {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+@media (max-width: 1300px) {
+    .uncompleted {
+        font-size: 30px;
+    }
+}
+@media (max-width: 768px) {
+    .uncompleted {
+        font-size: 20px;
+}
+}
+
+
+
+
+
+
+
+
+.modal{
+    display: none;
+}
+
+/* окно открыто */
+.modal_open {
+    display: block;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.3); 
+}
+/* окно закрыто */
+.modal_close {
+    display: none;
+}
+
+  
+.modal-content {
+    background-color: rgba(0,0,0,0.3); 
+    margin: 20% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; 
+    text-align: center;
+    border-radius: 20px;
+    color: #fff;
+}
+  
+.close {
+    color: fff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+.modal-text {
+    font-size: 30px;
+}
+  
+
+

@@ -1,0 +1,72 @@
+@media screen and (max-width: 1300px) {
+    .timer {
+      height: 60px;
+      font-size:40px
+    }
+    .conteiner_2-th{
+      margin-top: 25%;
+    }
+    .input_d {
+      width: 70%;
+      bottom: 25px;
+    }
+    .in_t {
+      font-size: 2.5vw;
+      height: 6vh;
+    }
+    .main_h {
+      margin-top: 8%;
+    }
+    
+    .main_img{
+      height: 40vw;
+    }
+    .main_h_p{
+      font-size:8vw;
+    }
+    .in{
+      width: 21vw;
+      font-size: 2vw;
+    }
+    
+    .weather{    
+      right: 5%;
+      top:6vw;
+      justify-content: center;
+      
+    }
+    .graduce{
+      font-size: 5vw;
+    }
+    .date{
+      font-size:3vw;
+    }
+    .img_weather_cont{
+      justify-content: center;
+    }
+    .name_weather{
+      font-size: 3vw;
+    }
+    .input_d{
+      width: 60%;
+    }
+    .tasklist li{
+      font-size: 30px;
+    }
+    .tasklist li .button1{
+      background-image:url("../img/icons8-checkmark.png");
+      background-size: 35px 35px;
+      width: 35px;
+      height: 35px;
+    }
+    .tasklist li .button2{
+      background-image:url("../img/icons8-clear.png");
+      background-size: 35px 35px;
+      width: 35px;
+      height: 35px;
+    }
+    .name_p{
+      font-size: 5vw;
+    }
+  }
+  
